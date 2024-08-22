@@ -30,10 +30,15 @@ CopyLeft 2020 Michael Rouves
 	<button id="main-clicker" class="clicker">
 		<div id="logo-clicker" class="clicker"></div>
 	</button>
+	<button onclick="showShopPopup()">Открыть магазин</button>
 	<!-- SHOP BUTTONS -->
-	<button id="b1" class="button" disabled><b></b>Удвоить количество за 1 клик</button>
-	<button id="b2" class="button" disabled><b></b>+5 каждую секунду</button>
-	<button id="b3" class="button" disabled><b></b>Удвоить количество за 1 сек</button>
+	<div id="shop-popup-overlay">
+            <div id="shop-popup">
+                <button id="b1" class="button" disabled><b></b>Удвоить количество за 1 клик</button>
+		<button id="b2" class="button" disabled><b></b>+5 каждую секунду</button>
+		<button id="b3" class="button" disabled><b></b>Удвоить количество за 1 сек</button>
+            </div>
+        </div>
 	
 	<!-- Load Javascript -->
 	<script src="script.js"></script>
