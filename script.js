@@ -147,5 +147,16 @@ element.clicker.onclick = function() {
 	addMoney(); updateMoney(); 
 	element.clicker.disabled = false;
 };
-
-
+const shopPopupOverlay = document.getElementById("shop-popup-overlay");
+const shopPopup = document.getElementById("shop-popup");
+ 
+function showShopPopup() {
+  shoppopupOverlay.style.display = "block";
+}
+ 
+function hideShopPopup() {
+  shoppopupOverlay.style.display = "none";
+}
+ 
+shopPopupOverlay.addEventListener("click", hideShopPopup);
+shopPopup.addEventListener("click", (event) =&gt; event.stopPropagation());
